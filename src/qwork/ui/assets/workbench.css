@@ -1,0 +1,34 @@
+:root { color-scheme: dark; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; color: #e2e8f0; background: #0b111b; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { display:flex; justify-content:space-between; align-items:center; padding:22px 28px; border-bottom:1px solid #253249; }
+h1 { font-size:25px; margin:7px 0; } h3 { font-size:14px; letter-spacing:.04em; margin:20px 0 12px; }
+header p, .helper { color:#93a4ba; font-size:12px; line-height:1.7; }
+.eyebrow { color:#38bdf8; font-size:11px; letter-spacing:.15em; }
+.badge { color:#67e8f9; border:1px solid #285369; padding:9px 15px; border-radius:20px; font-size:12px; }
+.workspace { display:grid; grid-template-columns:300px minmax(0,1fr); }
+aside { padding:5px 20px 24px; border-right:1px solid #253249; background:#0f1724; }
+main { padding:20px; min-width:0; }
+.field { display:flex; flex-direction:column; gap:7px; margin:11px 0; min-width:0; }
+.field > span { font-size:12px; color:#a6b6ca; }
+input { width:100%; border:1px solid #34445a; border-radius:5px; background:#172438; color:#e2e8f0; padding:9px; }
+button { width:100%; margin-top:12px; padding:10px; border:1px solid #34445a; border-radius:5px; background:#172438; color:#e2e8f0; cursor:pointer; }
+button.primary { background:#087e9d; border-color:#0891b2; font-weight:600; }
+.two-fields, .view-controls { display:flex; gap:12px; } .two-fields .field { width:50%; } .view-controls .field { width:200px; }
+.charts { display:grid; grid-template-columns:1.12fr 1fr; gap:16px; } .charts > div { height:490px; border:1px solid #253249; border-radius:8px; overflow:hidden; }
+.status-bar { background:#111a27; padding:12px 16px; border-radius:6px; font-size:12px; } .stats { margin-top:8px; color:#93a4ba; }
+.notes, .validation { font-size:12px; color:#fbbf24; line-height:1.6; } .notes { padding-top:10px; }
+summary { font-size:13px; cursor:pointer; padding:12px 0; }
+.scan-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; }
+.DateInput_input { background:#172438; color:#e2e8f0; font-size:13px; } .SingleDatePickerInput { background:#172438; border-color:#34445a; }
+@media(max-width:1200px) { .charts { grid-template-columns:1fr; } .charts > div { height:410px; } }
+@media(max-width:760px) { .workspace { grid-template-columns:1fr; } aside { border-right:0; } header { padding:16px; gap:12px; } }
+/* Dash 4 uses its own input and dropdown elements. Match their concrete classes. */
+.dash-input-element, .dash-dropdown, .dash-dropdown-search, textarea,
+.DateInput_input, .dash-datepicker-input { background:#172438 !important; color:#e2e8f0 !important; border-color:#34445a !important; }
+.dash-dropdown { margin-top:0; text-align:left; }
+.dash-dropdown-value, .dash-dropdown-value-item { color:#e2e8f0 !important; }
+.dash-dropdown-content, .dash-dropdown-options, .dash-dropdown-option { background:#172438 !important; color:#e2e8f0 !important; }
+input::placeholder, textarea::placeholder { color:#8194a8; }
+.dash-table-container button { width:auto; margin:0; padding:4px 9px; }
+.previous-next-container { display:flex; justify-content:flex-end; align-items:center; gap:6px; }
